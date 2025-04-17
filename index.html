@@ -1,33 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wear Royale</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Wear Royale Logo" class="logo"/>
+    <div class="logo">WEAR <span>ROYALE</span></div>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <a href="#">T-Shirts</a>
+      <a href="#">Shirts</a>
+      <a href="#">Pants</a>
+      <a href="#">Co-ords</a>
+      <a href="#">Oversized Collection</a>
+      <a href="#">Winter Wear</a>
     </nav>
+    <div class="login-cart">
+      <a href="#">Login</a>
+      <span class="cart-icon">🛒</span>
+    </div>
   </header>
-  <section class="hero">
-    <h1>Welcome to Wear Royale</h1>
-    <p>Elevate your style with our premium streetwear.</p>
-    <a href="#" class="cta">Shop Now</a>
-  </section>
+
+  <main>
+    <section class="hero">
+      <h1>ELEVATE YOUR STYLE</h1>
+      <h2>WITH WEAR ROYALE</h2>
+      <button>SHOP NOW</button>
+    </section>
+
+    <section class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1618354691363-488d3b87b3c1?fit=crop&w=600&h=700" alt="Black Oversized Tee" />
+        <h3>Black Oversized Tee</h3>
+        <p>₹799</p>
+        <button onclick="addToCart('Black Oversized Tee', 799)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1618354691106-f24f0f3d67e4?fit=crop&w=600&h=700" alt="Royal Fit White T-Shirt" />
+        <h3>Royal Fit White T-Shirt</h3>
+        <p>₹749</p>
+        <button onclick="addToCart('Royal Fit White T-Shirt', 749)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1602810318383-9ff61c5f913e?fit=crop&w=600&h=700" alt="Street Style Cargo Pant" />
+        <h3>Street Style Cargo Pant</h3>
+        <p>₹1199</p>
+        <button onclick="addToCart('Street Style Cargo Pant', 1199)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1627328715728-7bcc1b5db87d?fit=crop&w=600&h=700" alt="Premium Joggers" />
+        <h3>Premium Joggers</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Premium Joggers', 999)">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>CONTACT US</h3>
+      <p>amanbarnd@gmail.com</p>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Wear Royale. All rights reserved.</p>
+    <p>© 2024 WEAR ROYALE</p>
   </footer>
 
-  <!-- Tidio Chatbot Script (replace with your actual code) -->
-  <script src="//code.tidio.co/your-tidio-code.js" async></script>
+  <script src="script.js"></script>
 </body>
 </html>
